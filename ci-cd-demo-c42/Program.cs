@@ -19,6 +19,7 @@ namespace ci_cd_demo_c42
 
         public static IWebHost BuildWebHost(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
+                .UseApplicationInsights()
                 .UseStartup<Startup>()
                 .Build();
     }

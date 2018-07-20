@@ -40,6 +40,8 @@ namespace ci_cd_demo_c42
             app.UseStaticFiles();
 
             app.UseMvc();
+
+            System.Diagnostics.Trace.TraceInformation("Configure called");
         }
     }
 }
